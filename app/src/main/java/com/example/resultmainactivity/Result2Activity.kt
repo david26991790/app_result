@@ -37,8 +37,10 @@ class Result2Activity : AppCompatActivity() {
         Log.d("@@@ 寄結果", r2.toString())
 
         val intent = getIntent()
-        intent.putExtra()
+        intent.putExtra(KEY_r2, r2)
 
+        setResult(RESULT_OK, intent);
+        finish();
 
     }
 }

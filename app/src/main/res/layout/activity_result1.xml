@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:gravity="center"
+    android:orientation="vertical"
     tools:context=".Result1Activity">
 
     <LinearLayout
@@ -17,17 +17,20 @@
             android:layout_width="250dp"
             android:layout_height="250dp"
             android:layout_gravity="center"
-            android:src="@drawable/hornets"
-            android:contentDescription="這是黃蜂隊LOGO"
-            android:scaleType="fitXY"
             android:layout_marginBottom="16dp"
+            android:contentDescription="這是黃蜂隊LOGO"
             android:onClick="clickHornets"
-            />
+            android:scaleType="fitXY"
+            android:src="@drawable/hornets" />
+
         <ImageButton
             android:layout_width="250dp"
             android:layout_height="250dp"
             android:layout_gravity="center"
-            android:src="@drawable/rockets"/>
+            android:contentDescription="這是火箭隊Logo"
+            android:onClick="clickRockets"
+            android:scaleType="fitXY"
+            android:src="@drawable/rockets" />
 
     </LinearLayout>
 

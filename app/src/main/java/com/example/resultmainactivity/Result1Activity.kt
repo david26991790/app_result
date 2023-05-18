@@ -14,7 +14,7 @@ class Result1Activity : AppCompatActivity() {
         setContentView(R.layout.activity_result1)
     }
 
-    fun clickHornets(view: View){
+    fun clickHornets(view: View) {
 
         var 圖片id: Int
         var 圖片名稱: String
@@ -23,17 +23,17 @@ class Result1Activity : AppCompatActivity() {
         圖片名稱 = "黃蜂隊"
 
         val r1 = Result1(圖片id, 圖片名稱)
-Log.d("@@@ 寄結果", r1.toString())
+        Log.d("@@@ 寄結果", r1.toString())
 
-    val intent = getIntent()
-        intent.putExtra(KEY_r1, r1);
+        val intent = getIntent()
+        intent.putExtra(KEY_r1, r1)
 
         setResult(RESULT_OK, intent);
 
         finish();
     }
 
-    fun clickRockets(view: View){
+    fun clickRockets(view: View) {
 
         var 圖片id: Int
         var 圖片名稱: String
