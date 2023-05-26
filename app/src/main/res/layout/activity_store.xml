@@ -16,7 +16,7 @@
     <EditText
         android:id="@+id/et_name"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:inputType="text"
         android:hint="請輸入名字"/>
 
@@ -29,7 +29,7 @@
     <EditText
         android:id="@+id/et_eng"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:inputType="number"
         android:hint="請輸入英文成績"
          />
@@ -43,7 +43,7 @@
     <EditText
         android:id="@+id/et_math"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:inputType="number"
         android:hint="請輸入數學成績"
          />
@@ -58,7 +58,7 @@
 
         <Button
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:layout_marginRight="8dp"
             android:onClick="click_save"
             android:text="儲存"
