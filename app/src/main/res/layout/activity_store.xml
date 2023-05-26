@@ -17,11 +17,11 @@
         android:id="@+id/et_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="請輸入名字"
-        android:inputType="text" />
+        android:inputType="text"
+        android:hint="請輸入名字"/>
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Eng"
         android:textSize="30sp" />
@@ -30,8 +30,9 @@
         android:id="@+id/et_eng"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:inputType="number"
         android:hint="請輸入英文成績"
-        android:inputType="number" />
+         />
 
     <TextView
         android:layout_width="wrap_content"
@@ -44,7 +45,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="number"
-        android:text="請輸入數學成績" />
+        android:hint="請輸入數學成績"
+         />
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -59,22 +62,22 @@
             android:layout_marginRight="8dp"
             android:onClick="click_save"
             android:text="儲存"
-            android:textSize="25dp"/>
+            android:textSize="25dp" />
 
         <Button
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:layout_marginRight="8dp"
             android:onClick="click_load"
             android:text="讀取"
-            android:textSize="25dp"/>
+            android:textSize="25dp" />
 
         <Button
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:onClick="click_clear"
             android:text="清除畫面"
-            android:textSize="25dp"/>
+            android:textSize="25dp" />
 
     </LinearLayout>
 </LinearLayout>

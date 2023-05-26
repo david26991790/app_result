@@ -16,7 +16,7 @@ class Result2Activity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_result2)
+        setContentView(R.layout.activity_store)
 
         設定初值()
     }

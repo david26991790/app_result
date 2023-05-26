@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.content.Intent
 import android.util.Log
 import android.view.View
+import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
 
@@ -20,6 +21,14 @@ class ResultMainActivity : AppCompatActivity() {
     fun btn1(view: View) {
         var intent = Intent(this, Result1Activity::class.java)
         startActivityForResult(intent, 請求邊號_r1)
+    }
+    fun click_clear2(view: View){
+        val tv_name = findViewById<TextView>(R.id.et_name)
+        val tv_eng = findViewById<TextView>(R.id.et_eng)
+        val tv_math = findViewById<TextView>(R.id.et_math)
+        tv_name.setText("")
+        tv_eng.setText("")
+        tv_math.setText("")
     }
 
     fun btn2(view: View) {
@@ -54,7 +63,10 @@ class ResultMainActivity : AppCompatActivity() {
                     tv_math.text = r2.math.toString()
 
                 }
+
+
             }
         }
     }
+
 }
